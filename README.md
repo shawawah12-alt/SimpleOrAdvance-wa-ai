@@ -47,7 +47,7 @@ Bot ini dirancang ringan namun cukup lengkap untuk kebutuhan asisten AI harian d
 
 Sebelum menginstal bot, pastikan perangkat kamu memenuhi syarat berikut. Jika salah satu belum terpenuhi, script instalasi akan mencoba memenuhinya secara otomatis.
 
-- **Node.js versi 18 atau lebih baru** (disarankan v20 LTS). Baileys versi terbaru menggunakan fitur ES2022+ yang tidak tersedia di Node.js versi lama.
+- **Node.js versi 20 atau lebih baru** (disarankan v20 LTS). Baileys versi terbaru menggunakan fitur ES2022+ yang tidak tersedia di Node.js versi lama.
 - **npm** (biasanya ikut terpasang bersama Node.js).
 - **Git** (opsional, hanya untuk clone repo).
 - **Koneksi internet stabil** saat proses instalasi dan saat bot berjalan.
