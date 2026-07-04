@@ -1,5 +1,5 @@
 {
-  "name": "wa-ai-bot",
+  "name": "SimpleOrAdvance--Wa-ai-s-bot",
   "version": "1.0.0",
   "description": "Bot WhatsApp berbasis AI yang memanfaatkan API OpenAI-compatible. Dibangun dengan Baileys dan metode pairing code.",
   "main": "index.js",
