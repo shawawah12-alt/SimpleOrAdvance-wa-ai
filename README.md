@@ -89,7 +89,7 @@ pkg update -y && pkg upgrade -y
 pkg install git nodejs -y
 
 # 3. Clone repo
-git clone https://github.com/shawawah12-alt/SimpleOrAdvance--Wa-ai-s-bot.git
+git clone https://github.com/shawawah12-alt/SimpleOrAdvance-wa-ai.git
 cd SimpleOrAdvance--Wa-ai-s-bot
 
 # 4. Jalankan script instalasi
@@ -465,7 +465,7 @@ pkg update -y && pkg upgrade -y
 pkg install git nodejs -y
 
 # 3. Clone the repo
-git clone https://github.com/shawawah12-alt/SimpleOrAdvance--Wa-ai-s-bot.git
+git clone https://github.com/shawawah12-alt/SimpleOrAdvance-wa-ai.git
 cd SimpleOrAdvance--Wa-ai-s-bot
 
 # 4. Run the installation script
@@ -491,7 +491,7 @@ Suitable for those running the bot on a VPS, Linux PC, WSL, or Raspberry Pi. The
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/shawawah12-alt/SimpleOrAdvance--Wa-ai-s-bot.git
+git clone https://github.com/shawawah12-alt/SimpleOrAdvance-wa-ai.git
 cd SimpleOrAdvance--Wa-ai-s-bot
 
 # 2. Give execute permission and run the installation script
