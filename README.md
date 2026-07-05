@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/shawawah12-alt/SimpleOrAdvance--Wa-ai-s-bot/actions/workflows/node.js.yml/badge.svg)](https://github.com/shawawah12-alt/SimpleOrAdvance--Wa-ai-s-bot/actions/workflows/node.js.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Indonesian](https://img.shields.io/badge/README-Bahasa%20Indonesia-red?style=flat&logo=github)](#bahasa-indonesia) [![English](https://img.shields.io/badge/README-English-blue?style=flat&logo=github)](#english-version)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Indonesian](https://img.shields.io/badge/README-Bahasa%20Indonesia-red?style=flat&logo=github)](#bahasa-indonesia) [![English](https://img.shields.io/badge/README-English-blue?style=flat&logo=github)](#english-version)
 
 # Simple Or Advance? WA AI's Bot
 
@@ -90,7 +90,7 @@ pkg install git nodejs -y
 
 # 3. Clone repo
 git clone https://github.com/shawawah12-alt/SimpleOrAdvance-wa-ai.git
-cd SimpleOrAdvance--Wa-ai-s-bot
+cd SimpleOrAdvance-wa-ai
 
 # 4. Jalankan script instalasi
 bash install-termux.sh
@@ -116,7 +116,7 @@ Cocok untuk kamu yang menjalankan bot di VPS, PC Linux, WSL, atau Raspberry Pi. 
 ```bash
 # 1. Clone repo
 git clone https://github.com/shawawah12-alt/SimpleOrAdvance-wa-ai.git
-cd SimpleOrAdvance--Wa-ai-s-bot
+cd SimpleOrAdvance-wa-ai
 
 # 2. Beri permission execute dan jalankan script instalasi
 chmod +x install-linux.sh
@@ -202,7 +202,7 @@ Semua perintah diawali dengan `/ai`. Berikut daftar perintah yang tersedia:
 | Perintah | Fungsi |
 |---|---|
 | `/ai` | Menampilkan bantuan dan status bot saat ini. |
-| `/ai set\endpoint: ...\apikey: ...\model: ...` | Mengatur atau mengganti provider AI. |
+| `/ai set` (diikuti baris `endpoint:`, `apikey:`, `model:`) | Mengatur atau mengganti provider AI. |
 | `/ai <pertanyaan>` | Bertanya ke AI dengan mode normal (jawaban singkat). |
 | `/ai (thinking) <pertanyaan>` | Bertanya ke AI dengan mode analitis (jawaban mendalam). |
 | `/ai clear` | Menghapus riwayat percakapan untuk chat saat ini. |
@@ -262,7 +262,7 @@ Ganti `"id"` dengan `"en"` untuk English, atau sebaliknya. Simpan file, lalu jal
 ## Struktur Proyek
 
 ```
-SimpleOrAdvance--Wa-ai-s-bot/
+SimpleOrAdvance-wa-ai/
 ├── index.js              # Source code utama bot (bilingual)
 ├── package.json          # Daftar dependencies dan metadata proyek
 ├── install-termux.sh     # Script instalasi untuk Termux (Android)
@@ -466,7 +466,7 @@ pkg install git nodejs -y
 
 # 3. Clone the repo
 git clone https://github.com/shawawah12-alt/SimpleOrAdvance-wa-ai.git
-cd SimpleOrAdvance--Wa-ai-s-bot
+cd SimpleOrAdvance-wa-ai
 
 # 4. Run the installation script
 bash install-termux.sh
@@ -492,7 +492,7 @@ Suitable for those running the bot on a VPS, Linux PC, WSL, or Raspberry Pi. The
 ```bash
 # 1. Clone the repo
 git clone https://github.com/shawawah12-alt/SimpleOrAdvance-wa-ai.git
-cd SimpleOrAdvance--Wa-ai-s-bot
+cd SimpleOrAdvance-wa-ai
 
 # 2. Give execute permission and run the installation script
 chmod +x install-linux.sh
@@ -528,7 +528,7 @@ After installation is complete and the bot is first run with `node index.js`, fo
 8. **Enter the 8-digit pairing code** that appeared in the terminal.
 9. If successful, the terminal will display `PAIRING SUCCESS. Bot is ready to run.` and the bot will be active to receive messages.
 
-Next, you need to set up the AI provider to use. Send a message to your own WhatsApp account (or chat to the bot number from another number) with the following fformat
+Next, you need to set up the AI provider to use. Send a message to your own WhatsApp account (or chat to the bot number from another number) with the following format:
 
 ```
 /ai set
@@ -578,7 +578,7 @@ All commands start with `/ai`. Here is the list of available commands:
 | Command | Function |
 |---|---|
 | `/ai` | Displays help and current bot status. |
-| `/ai set\endpoint: ...\apikey: ...\model: ...` | Sets or changes the AI provider. |
+| `/ai set` (followed by lines `endpoint:`, `apikey:`, `model:`) | Sets or changes the AI provider. |
 | `/ai <question>` | Asks AI in normal mode (short answer). |
 | `/ai (thinking) <question>` | Asks AI in analytical mode (in-depth answer). |
 | `/ai clear` | Clears conversation history for the current chat. |
@@ -638,7 +638,7 @@ Replace `"en"` with `"id"` for Indonesian, or vice versa. Save the file, then ru
 ## Project Structure
 
 ```
-SimpleOrAdvance--Wa-ai-s-bot/
+SimpleOrAdvance-wa-ai/
 ├── index.js              # Main bot source code (bilingual)
 ├── package.json          # Dependencies list and project metadata
 ├── install-termux.sh     # Installation script for Termux (Android)

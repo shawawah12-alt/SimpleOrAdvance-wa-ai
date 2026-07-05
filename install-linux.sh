@@ -5,7 +5,7 @@
 # Mendukung: Debian, Ubuntu, Fedora, Arch, CentOS, RHEL
 # Script ini akan:
 #   1. Mendeteksi package manager (apt/dnf/pacman/yum)
-#   2. Mengecek/install Node.js v18+ (disarankan v20 LTS)
+#   2. Mengecek/install Node.js v20+ (v20 LTS atau v22 LTS)
 #   3. Menginstall dependencies npm
 #   4. Menyiapkan file config.json dan history.json kosong
 #   5. Menampilkan instruksi langkah selanjutnya
@@ -55,7 +55,7 @@ echo -e "${Y}[Info]${N} Package manager terdeteksi: ${C}${PM}${N}"
 
 if [ "$PM" = "unknown" ]; then
     echo -e "${R}[X]${N} Package manager tidak dikenali."
-    echo -e "${Y}[!]${N} Install Node.js v18+ manual sesuai dokumentasi distro kamu,"
+    echo -e "${Y}[!]${N} Install Node.js v20+ manual sesuai dokumentasi distro kamu,"
     echo -e "${Y}[!]${N} lalu jalankan: ${G}npm install${N}"
     exit 1
 fi
@@ -94,7 +94,7 @@ if ! command -v node >/dev/null 2>&1; then
     NEED_INSTALL_NODE=true
 else
     NODE_VERSION=$(node -v 2>/dev/null | sed 's/v//' | cut -d. -f1)
-    if [ "$NODE_VERSION" -lt 18 ]; then
+    if [ "$NODE_VERSION" -lt 20 ]; then
         echo -e "${Y}[!]${N} Versi Node.js terlalu lama (v${NODE_VERSION}). Akan di-upgrade ke v20."
         NEED_INSTALL_NODE=true
     fi
@@ -160,8 +160,8 @@ if [ -z "$NODE_VERSION" ]; then
     exit 1
 fi
 
-if [ "$NODE_VERSION" -lt 18 ]; then
-    echo -e "${R}[X]${N} Versi Node.js masih di bawah v18 (v${NODE_VERSION})."
+if [ "$NODE_VERSION" -lt 20 ]; then
+    echo -e "${R}[X]${N} Versi Node.js masih di bawah v20 (v${NODE_VERSION})."
     echo -e "${Y}[!]${N} Update manual via NodeSource: https://github.com/nodesource/distributions"
     exit 1
 fi

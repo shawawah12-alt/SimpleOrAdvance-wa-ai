@@ -4,7 +4,7 @@
 # --------------------------------------------------------------------
 # Script ini akan:
 #   1. Memastikan nodejs dan git terpasang di Termux
-#   2. Mengecek versi Node.js (minimal v18)
+#   2. Mengecek versi Node.js (minimal v20)
 #   3. Menginstall dependencies npm (Baileys, axios, pino, @hapi/boom)
 #   4. Menyiapkan file config.json dan history.json kosong
 #   5. Menampilkan instruksi langkah selanjutnya
@@ -71,8 +71,8 @@ if [ -z "$NODE_VERSION" ]; then
     exit 1
 fi
 
-if [ "$NODE_VERSION" -lt 18 ]; then
-    echo -e "${R}[X] Versi Node.js terlalu lama (v${NODE_VERSION}). Minimum v18.${N}"
+if [ "$NODE_VERSION" -lt 20 ]; then
+    echo -e "${R}[X] Versi Node.js terlalu lama (v${NODE_VERSION}). Minimum v20.${N}"
     echo -e "${Y}[!]${N} Coba update dengan: pkg upgrade nodejs"
     echo -e "${Y}[!]${N} Jika masih gagal, install Node.js LTS terbaru dari sumber lain."
     exit 1
